@@ -3,10 +3,13 @@ import React from "react";
 
 function TaskForm({ createTask }) {
   const [title, setTitle] = useState("");
+  const [descripcion, setDescripcion] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault(); //sirve para que el estado guarde lo que tipeo
-    createTask(title);
+    createTask({title,descripcion});
+    setTitle('');
+    setDescripcion('');
   };
 
   return (
@@ -14,7 +17,14 @@ function TaskForm({ createTask }) {
       <input
         placeholder="Escribe tu tarea"
         onChange={(e) => setTitle(e.target.value)}
+        value={title}
+        autoFocus
       ></input>
+            <textarea
+        placeholder="Escribe la descripcion de tu tarea"
+        onChange={(e) => setDescripcion(e.target.value)}
+        value={descripcion}
+      ></textarea>
       <button>Guardar</button>
     </form>
   );

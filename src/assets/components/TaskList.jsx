@@ -1,4 +1,5 @@
 import React from "react";
+import TaskCards from "./TaskCards";
 
 function TaskList({ tasks }) {
   if (tasks.length === 0) {
@@ -8,10 +9,7 @@ function TaskList({ tasks }) {
   return (
     <div>
       {tasks.map((task) => (
-        <div key={task.id}>
-          <h1>{task.title}</h1>
-          <p>{task.descripcion}</p>
-        </div>
+        <TaskCards key={task.id} task={task}/>
       ))}
     </div>
   );
