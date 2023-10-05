@@ -6,7 +6,7 @@ function TaskCards({ task, deleteTask }) {
     <div>
       <h1>{task.title}</h1>
       <p>{task.descripcion}</p>
-      <button onClick={() => deleteTask(task.id)}>Eliminar</button>
+      <button onClick={() => deleteTask(task.id)}>Eliminar tarea</button>
     </div>
   );
 }
