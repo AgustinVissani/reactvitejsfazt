@@ -1,5 +1,10 @@
-import React, { useContext } from "react";
-function TaskCards({ task, deleteTask }) {
+import React, { useContext } from "react"; 
+import { TaskContext } from "../context/TaskContext";
+
+function TaskCards({ task}) {
+
+  
+  const { deleteTask } = useContext(TaskContext);
 
   return (
     <div>
