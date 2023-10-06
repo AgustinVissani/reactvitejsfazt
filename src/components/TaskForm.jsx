@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import React from "react";
+import { TaskContext } from "../context/TaskContext";
 
 function TaskForm({ createTask }) {
   const [title, setTitle] = useState("");
   const [descripcion, setDescripcion] = useState("");
+
+  const valor = useContext(TaskContext);
+  console.log(valor);
+
 
   const handleSubmit = (e) => {
     e.preventDefault(); //sirve para que el estado guarde lo que tipeo

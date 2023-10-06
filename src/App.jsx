@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { tasks as data } from "./assets/./data/tasks";
-import TaskList from "./assets/components/TaskList";
-import TaskForm from "./assets/components/TaskForm";
+import TaskList from "./components/TaskList";
+import TaskForm from "./components/TaskForm";
 
 function App() {
   const [tasks, setTasks] = useState([]);
