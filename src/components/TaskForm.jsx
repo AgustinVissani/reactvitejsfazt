@@ -32,7 +32,7 @@ function TaskForm() {
           value={descripcion}
           className="bg-slate-300 p-3 w-full mb-2"
         ></textarea>
-        <button className="bg-green-600 px-3 py-1 text-black">Guardar</button>
+        <button className="bg-green-600 px-3 py-1 text-black">Save</button>
       </form>
     </div>
   );

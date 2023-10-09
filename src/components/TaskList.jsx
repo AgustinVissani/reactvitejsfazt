@@ -8,7 +8,7 @@ function TaskList() {
   if (!tasks || tasks.length === 0) {
     return (
       <h1 className="text-white text-4xl font-bold text-center">
-        No hay tareas creadas
+        No tasks created
       </h1>
     );
   }
