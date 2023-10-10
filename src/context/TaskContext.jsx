@@ -15,8 +15,11 @@ export function TaskContextProvider(props) {
       ...prevTasks,
       {
         title: task.title,
-        id: prevTasks.length + 1, // Use prevTasks.length to calculate the new id
+        id: prevTasks.length + 1,
         descripcion: task.descripcion,
+        date: task.date, // Include date
+        date: task.date,
+        time: task.time,
       },
     ]);
   }

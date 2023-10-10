@@ -1,22 +1,10 @@
  export const tasks = [
   // {
-  //   id: 0,
-  //   title: "Mi cero tarea",
-  //   descripcion: "Mi cero tarea descripcion",
+  //   // id: 0,
+  //   // title: "Example task",
+  //   // descripcion: "Description example task",
+  //   // date: "10-10-2023",
+  //   // time: "22:50",
   // },
-  // {
-  //   id: 1,
-  //   title: "Mi primer tarea",
-  //   descripcion: "Mi primer tarea descripcion",
-  // },
-  // {
-  //   id: 2,
-  //   title: "Mi segunda tarea",
-  //   descripcion: "Mi segunda tarea descripcion",
-  // },
-  // {
-  //   id: 3,
-  //   title: "Mi tercer tarea",
-  //   descripcion: "Mi tercer tarea descripcion",
-  // },
+  
 ];
